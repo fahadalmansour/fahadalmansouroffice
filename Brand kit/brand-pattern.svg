@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <pattern id="brand-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="#FBF8F2"/>
+      <!-- Diamond grid (sapphire) -->
+      <polygon points="60,15 90,60 60,105 30,60" fill="none" stroke="#0B2A4A" stroke-width="0.8" opacity="0.18"/>
+      <!-- Inner diamond (gold) -->
+      <polygon points="60,35 80,60 60,85 40,60" fill="none" stroke="#C8A45C" stroke-width="0.8" opacity="0.30"/>
+      <!-- Center dot -->
+      <circle cx="60" cy="60" r="2" fill="#8C6E2D" opacity="0.5"/>
+      <!-- Corner dots -->
+      <circle cx="0" cy="0" r="1.5" fill="#0B2A4A" opacity="0.25"/>
+      <circle cx="120" cy="0" r="1.5" fill="#0B2A4A" opacity="0.25"/>
+      <circle cx="0" cy="120" r="1.5" fill="#0B2A4A" opacity="0.25"/>
+      <circle cx="120" cy="120" r="1.5" fill="#0B2A4A" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="480" fill="url(#brand-pattern)"/>
+</svg>

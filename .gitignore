@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+._*
+.Trashes
+
+# Editor / OS noise
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Duplicates that crept in (Finder copy-paste artifacts)
+CLAUDE\ 2.md
+README\ 2.md
+index\ 2.html
+
+# Local-only Claude config
+.claude/settings.local.json
+
+# Archives / one-offs
+files.zip
+*.bak
+*.backup-*
+
+# Python build artifacts (the generate_*.py scripts produce assets, not byproducts here, but defensive)
+__pycache__/
+*.pyc

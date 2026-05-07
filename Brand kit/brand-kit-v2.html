@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Kit v2 — Fahad Almansour Office for Electronic Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --sapphire: #0B2A4A;
+    --sapphire-2: #0E3658;
+    --champagne: #C8A45C;
+    --champagne-pale: #F0DFB0;
+    --antique: #8C6E2D;
+    --pearl: #FBF8F2;
+    --pearl-warm: #F5EFDF;
+    --ink: #0F1419;
+    --charcoal: #1A1F2E;
+    --stone: #C9C2B3;
+    --line: rgba(11, 42, 74, 0.10);
+    --shadow-soft: 0 1px 2px rgba(11,42,74,0.04), 0 4px 12px rgba(11,42,74,0.06);
+    --shadow-deep: 0 4px 8px rgba(11,42,74,0.08), 0 16px 40px rgba(11,42,74,0.12);
+    --paper: linear-gradient(135deg, #fefcf6 0%, var(--pearl) 50%, #f3edde 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--pearl);
+    color: var(--charcoal);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1320px; margin: 0 auto; padding: 0 32px; }
+  .ar { font-family: 'Noto Naskh Arabic', 'Amiri', serif; direction: rtl; }
+  .display { font-family: 'Playfair Display', Georgia, serif; }
+  .mono { font-family: 'SF Mono', Menlo, 'Roboto Mono', monospace; }
+
+  /* ---------- HEADER ---------- */
+  header.brand-header {
+    background: linear-gradient(135deg, var(--sapphire) 0%, var(--sapphire-2) 50%, var(--ink) 100%);
+    color: var(--pearl);
+    padding: 96px 32px 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header.brand-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(200,164,92,0.18), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(200,164,92,0.12), transparent 50%);
+  }
+  header.brand-header::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon points='60,15 90,60 60,105 30,60' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.10'/%3E%3C/svg%3E");
+    background-size: 120px 120px;
+    opacity: 0.5;
+  }
+  header.brand-header > * { position: relative; }
+  .eyebrow {
+    color: var(--champagne);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .brand-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  .brand-header h1 .accent {
+    color: var(--champagne);
+    font-style: italic;
+  }
+  .brand-header .arabic-name {
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--champagne-pale);
+  }
+  .brand-header p {
+    color: rgba(251, 248, 242, 0.78);
+    font-size: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .header-logo { width: 130px; height: 130px; margin-bottom: 40px;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.25));
+  }
+  .v2-badge {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 6px 14px;
+    background: rgba(200,164,92,0.18);
+    border: 1px solid rgba(200,164,92,0.4);
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--champagne);
+    text-transform: uppercase;
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section {
+    padding: 96px 0 80px;
+    border-bottom: 1px solid var(--line);
+  }
+  .section-num {
+    color: var(--champagne);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--sapphire);
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+    line-height: 1.1;
+  }
+  .section-lead {
+    color: var(--charcoal);
+    opacity: 0.72;
+    font-size: 16px;
+    max-width: 680px;
+    margin-bottom: 56px;
+    line-height: 1.65;
+  }
+
+  /* ---------- LOGO GRID ---------- */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 22px;
+  }
+  .logo-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-soft);
+  }
+  .logo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-deep);
+    border-color: rgba(200,164,92,0.4);
+  }
+  .logo-stage {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-stage svg { width: 100%; height: 100%; max-width: 200px; max-height: 200px; }
+  .logo-stage.bg-pearl { background: var(--pearl); }
+  .logo-stage.bg-ink { background: var(--ink); }
+  .logo-stage.bg-sapphire { background: var(--sapphire); }
+  .logo-stage.bg-champagne { background: var(--champagne); }
+  .logo-stage.bg-pattern {
+    background-color: var(--pearl);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpolygon points='30,8 45,30 30,52 15,30' fill='none' stroke='%230B2A4A' stroke-width='0.5' opacity='0.15'/%3E%3Cpolygon points='30,18 38,30 30,42 22,30' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.25'/%3E%3C/svg%3E");
+  }
+  .logo-meta { padding: 16px 20px; border-top: 1px solid var(--line); background: #fff; }
+  .logo-meta .label { font-size: 14px; font-weight: 700; color: var(--sapphire); }
+  .logo-meta .sub { font-size: 12px; color: var(--charcoal); opacity: 0.6; margin-top: 3px; }
+
+  /* ---------- LOCKUPS ---------- */
+  .lockup-stack { display: flex; flex-direction: column; gap: 28px; }
+  .lockup-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+  }
+  .lockup-stage {
+    padding: 56px 40px;
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+  }
+  .lockup-stage.dark {
+    background: linear-gradient(135deg, #131826 0%, var(--ink) 100%);
+  }
+  .lockup-meta { padding: 16px 24px; background: #fff; border-top: 1px solid var(--line); }
+  .lockup-meta .label { font-weight: 700; color: var(--sapphire); font-size: 14px; }
+  .lockup-meta .sub { font-size: 12px; color: var(--charcoal); opacity: 0.6; margin-top: 2px; }
+
+  /* horizontal lockup */
+  .lockup-h {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .lockup-h svg.badge { width: 110px; height: 110px; flex-shrink: 0; }
+  .lockup-h .text-block {
+    border-left: 2px solid var(--champagne);
+    padding-left: 22px;
+  }
+  .lockup-h .text-block .ar-name {
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--sapphire);
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .lockup-h .text-block .latin-name {
+    font-weight: 800;
+    color: var(--sapphire);
+    font-size: 19px;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+  }
+  .lockup-h .text-block .tagline {
+    font-size: 12px;
+    color: var(--antique);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  /* dark variant */
+  .lockup-h.reversed .text-block { border-left-color: var(--champagne); }
+  .lockup-h.reversed .ar-name { color: var(--champagne-pale); }
+  .lockup-h.reversed .latin-name { color: var(--pearl); }
+  .lockup-h.reversed .tagline { color: var(--champagne); }
+
+  /* vertical lockup */
+  .lockup-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+  .lockup-v svg.badge { width: 130px; height: 130px; }
+  .lockup-v .divider {
+    width: 50px; height: 1.5px;
+    background: var(--champagne);
+  }
+  .lockup-v .ar-name {
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--sapphire);
+    line-height: 1.3;
+    max-width: 480px;
+  }
+  .lockup-v .latin-name {
+    font-weight: 800;
+    color: var(--sapphire);
+    font-size: 20px;
+    letter-spacing: 0.05em;
+  }
+  .lockup-v .tagline {
+    font-size: 11px;
+    color: var(--antique);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .lockup-v.reversed .ar-name { color: var(--champagne-pale); }
+  .lockup-v.reversed .latin-name { color: var(--pearl); }
+  .lockup-v.reversed .tagline { color: var(--champagne); }
+  .lockup-v.reversed .divider { background: var(--champagne); }
+
+  /* ---------- CONSTRUCTION ---------- */
+  .construction-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 800px) { .construction-row { grid-template-columns: 1fr; } }
+  .construction-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+  }
+  .construction-stage {
+    aspect-ratio: 1;
+    background: var(--pearl);
+    padding: 8px;
+  }
+  .construction-stage svg, .construction-stage img {
+    width: 100%; height: 100%; display: block;
+  }
+  .construction-meta { padding: 16px 22px; border-top: 1px solid var(--line); }
+  .construction-meta .label { font-weight: 700; color: var(--sapphire); font-size: 15px; margin-bottom: 4px; }
+  .construction-meta .sub { font-size: 13px; color: var(--charcoal); opacity: 0.7; }
+  .construction-meta .specs {
+    margin-top: 12px;
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--antique);
+    line-height: 1.7;
+  }
+
+  /* minimum size table */
+  .min-size-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    padding: 32px;
+    background: var(--pearl);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .min-size-item { text-align: center; }
+  .min-size-item svg { display: block; margin: 0 auto 12px; }
+  .min-size-item .px {
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 12px;
+    color: var(--antique);
+    font-weight: 600;
+  }
+  .min-size-item .desc {
+    font-size: 11px;
+    color: var(--charcoal);
+    opacity: 0.65;
+    margin-top: 4px;
+  }
+  .min-size-item.warn .desc { color: #a91e1e; opacity: 1; font-weight: 600; }
+
+  /* ---------- COLOR PALETTE ---------- */
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 16px;
+  }
+  .swatch {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s;
+  }
+  .swatch:hover { transform: translateY(-2px); }
+  .swatch-color {
+    height: 130px;
+    position: relative;
+  }
+  .swatch-color::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+  }
+  .swatch-meta { padding: 14px 18px; }
+  .swatch-meta .name {
+    font-weight: 700;
+    color: var(--sapphire);
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .swatch-meta .vals {
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    color: var(--charcoal);
+    opacity: 0.78;
+    line-height: 1.7;
+  }
+  .swatch-meta .vals span { display: block; }
+  .swatch-meta .role {
+    font-size: 10px;
+    color: var(--antique);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  /* ---------- TYPOGRAPHY ---------- */
+  .type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+  }
+  .type-card {
+    padding: 36px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+  }
+  .type-card .role {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    margin-bottom: 14px;
+  }
+  .type-card .specimen { color: var(--sapphire); margin-bottom: 14px; }
+  .type-card .info {
+    font-size: 12px;
+    color: var(--charcoal);
+    opacity: 0.7;
+    font-family: 'SF Mono', Menlo, monospace;
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+  }
+
+  /* ---------- MOCKUPS ---------- */
+  .mockups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 28px;
+  }
+  .mockup {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+  }
+  .mockup-stage {
+    padding: 56px 48px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(200,164,92,0.06), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(11,42,74,0.04), transparent 50%),
+      linear-gradient(135deg, #f7f1e2 0%, var(--pearl) 50%, #ede4cd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+    position: relative;
+    overflow: hidden;
+  }
+  .mockup-stage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(45deg,
+        rgba(140,110,45,0.03) 0px,
+        rgba(140,110,45,0.03) 1px,
+        transparent 1px,
+        transparent 12px);
+    pointer-events: none;
+  }
+  .mockup-stage.dark {
+    background:
+      radial-gradient(circle at 30% 30%, rgba(200,164,92,0.10), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(11,42,74,0.4), transparent 60%),
+      linear-gradient(135deg, var(--ink) 0%, #1a2438 100%);
+  }
+  .mockup-stage.dark::before {
+    background-image:
+      repeating-linear-gradient(45deg,
+        rgba(200,164,92,0.025) 0px,
+        rgba(200,164,92,0.025) 1px,
+        transparent 1px,
+        transparent 12px);
+  }
+  .mockup-meta { padding: 16px 24px; background: #fff; border-top: 1px solid var(--line); }
+  .mockup-meta .label { font-weight: 700; color: var(--sapphire); font-size: 14px; }
+  .mockup-meta .sub { font-size: 12px; color: var(--charcoal); opacity: 0.6; margin-top: 2px; }
+
+  /* ----- BUSINESS CARD ----- */
+  .biz-card {
+    width: 320px;
+    aspect-ratio: 1.75 / 1;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(200,164,92,0.08), transparent 40%),
+      var(--pearl);
+    border: 1px solid rgba(140,110,45,0.15);
+    border-radius: 6px;
+    box-shadow:
+      0 1px 2px rgba(11,42,74,0.06),
+      0 8px 24px rgba(11,42,74,0.18),
+      0 24px 48px rgba(11,42,74,0.10);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(-2deg);
+    transition: transform 0.3s;
+  }
+  .biz-card:hover { transform: rotate(0deg); }
+  .biz-card::before {
+    content: '';
+    position: absolute;
+    top: -10px; right: -10px;
+    width: 80px; height: 80px;
+    background: linear-gradient(135deg, var(--champagne) 0%, var(--antique) 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    opacity: 0.22;
+  }
+  .biz-card .top { display: flex; align-items: center; gap: 12px; }
+  .biz-card .top svg { width: 46px; height: 46px; }
+  .biz-card .top .ar {
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-weight: 600;
+    color: var(--sapphire);
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .biz-card .top .name {
+    font-weight: 800;
+    color: var(--sapphire);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+  .biz-card .person {
+    font-weight: 700;
+    color: var(--sapphire);
+    font-size: 15px;
+  }
+  .biz-card .title {
+    color: var(--antique);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .biz-card .contact {
+    font-size: 10px;
+    color: var(--charcoal);
+    opacity: 0.78;
+    line-height: 1.6;
+  }
+  .biz-card.back {
+    background:
+      radial-gradient(circle at 50% 50%, var(--sapphire-2), var(--sapphire));
+    align-items: center;
+    justify-content: center;
+    transform: rotate(2deg);
+  }
+  .biz-card.back:hover { transform: rotate(0deg); }
+  .biz-card.back svg { width: 110px; height: 110px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+  }
+  .biz-card.back::before { display: none; }
+  .biz-card.back .stamp {
+    position: absolute;
+    bottom: 18px;
+    right: 22px;
+    color: rgba(200,164,92,0.7);
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+  }
+
+  /* ----- LETTERHEAD ----- */
+  .letterhead {
+    width: 320px;
+    aspect-ratio: 0.71 / 1;
+    background:
+      radial-gradient(ellipse at top right, rgba(200,164,92,0.08), transparent 60%),
+      var(--pearl);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow:
+      0 1px 2px rgba(11,42,74,0.06),
+      0 8px 24px rgba(11,42,74,0.14),
+      0 24px 48px rgba(11,42,74,0.08);
+    padding: 22px 26px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .letterhead-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid var(--champagne);
+    padding-bottom: 14px;
+  }
+  .letterhead-top svg { width: 50px; height: 50px; }
+  .letterhead-top .name-block { text-align: right; }
+  .letterhead-top .ar {
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-size: 10px;
+    color: var(--sapphire);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .letterhead-top .name {
+    font-weight: 800;
+    color: var(--sapphire);
+    font-size: 11px;
+    letter-spacing: 0.03em;
+  }
+  .letterhead-top .sub {
+    font-size: 7px;
+    color: var(--antique);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .letterhead-body {
+    flex: 1;
+    padding-top: 18px;
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  .letterhead-body .meta-row {
+    color: var(--charcoal);
+    opacity: 0.75;
+    margin-bottom: 12px;
+    font-size: 8px;
+  }
+  .letterhead-body .line {
+    background: var(--charcoal);
+    opacity: 0.18;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+  .letterhead-body .line.short { width: 60%; }
+  .letterhead-body .line.medium { width: 78%; }
+  .letterhead-foot {
+    border-top: 1px solid var(--line);
+    padding-top: 8px;
+    font-size: 7px;
+    color: var(--antique);
+    text-align: center;
+    letter-spacing: 0.12em;
+  }
+
+  /* ----- ENVELOPE ----- */
+  .envelope {
+    width: 360px;
+    aspect-ratio: 2.2 / 1;
+    background: var(--pearl);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: var(--shadow-deep);
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .envelope::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: -1px; right: -1px;
+    height: 50%;
+    background: linear-gradient(180deg,
+      rgba(255,255,255,0.4) 0%,
+      transparent 100%);
+    border-radius: 4px 4px 0 0;
+    pointer-events: none;
+  }
+  .envelope-top { display: flex; align-items: center; gap: 10px; }
+  .envelope-top svg { width: 40px; height: 40px; }
+  .envelope-top .name {
+    font-weight: 800;
+    color: var(--sapphire);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+  .envelope-top .sub {
+    font-size: 7px;
+    color: var(--antique);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 1px;
+  }
+  .envelope-bottom {
+    font-size: 8px;
+    color: var(--charcoal);
+    opacity: 0.7;
+    border-top: 1px solid var(--champagne);
+    padding-top: 6px;
+    text-align: right;
+  }
+  .envelope-stamp {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 36px;
+    height: 44px;
+    background: var(--pearl-warm);
+    border: 1px dashed var(--antique);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .envelope-stamp svg { width: 22px; height: 22px; opacity: 0.6; }
+
+  /* ----- WEB MOCKUP ----- */
+  .web-mock {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: var(--shadow-deep);
+    overflow: hidden;
+  }
+  .web-mock-bar {
+    background: #f1ebde;
+    padding: 8px 14px;
+    display: flex;
+    gap: 6px;
+  }
+  .web-mock-bar span {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgba(0,0,0,0.15);
+  }
+  .web-mock-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--line);
+    background: #fff;
+  }
+  .web-mock-nav .left { display: flex; align-items: center; gap: 10px; }
+  .web-mock-nav .left svg { width: 36px; height: 36px; }
+  .web-mock-nav .left .text {
+    font-size: 13px; font-weight: 800; color: var(--sapphire);
+    letter-spacing: 0.04em;
+  }
+  .web-mock-nav .links {
+    display: flex; gap: 18px;
+    font-size: 11px; font-weight: 600; color: var(--charcoal); opacity: 0.8;
+  }
+  .web-mock-nav .links .cta {
+    background: var(--sapphire); color: var(--pearl);
+    padding: 6px 12px; border-radius: 4px; opacity: 1;
+  }
+  .web-mock-hero {
+    padding: 36px 22px 30px;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpolygon points='30,8 45,30 30,52 15,30' fill='none' stroke='%230B2A4A' stroke-width='0.4' opacity='0.10'/%3E%3C/svg%3E"),
+      linear-gradient(135deg, var(--pearl) 0%, #f1ebde 100%);
+  }
+  .web-mock-hero .h {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; color: var(--sapphire);
+    letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 8px;
+  }
+  .web-mock-hero .h .a { color: var(--champagne); font-style: italic; }
+  .web-mock-hero .p {
+    font-size: 11px; color: var(--charcoal); opacity: 0.7;
+    max-width: 70%;
+  }
+
+  /* ----- AVATARS ----- */
+  .avatar-row { display: flex; gap: 14px; align-items: flex-end; flex-wrap: wrap; }
+  .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(11,42,74,0.18);
+    flex-shrink: 0;
+  }
+  .avatar svg { width: 100%; height: 100%; display: block; }
+  .avatar.s120 { width: 120px; height: 120px; }
+  .avatar.s80 { width: 80px; height: 80px; }
+  .avatar.s48 { width: 48px; height: 48px; }
+  .avatar.s32 { width: 32px; height: 32px; }
+  .avatar.s24 { width: 24px; height: 24px; }
+  .avatar.s16 { width: 16px; height: 16px; }
+
+  /* ----- SOCIAL CARDS ----- */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .social-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+  }
+  /* LinkedIn cover */
+  .social-linkedin {
+    aspect-ratio: 4 / 1;
+    background:
+      radial-gradient(circle at 80% 50%, rgba(200,164,92,0.18), transparent 50%),
+      linear-gradient(135deg, var(--sapphire) 0%, var(--ink) 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .social-linkedin::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpolygon points='30,8 45,30 30,52 15,30' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.10'/%3E%3C/svg%3E");
+  }
+  .social-linkedin svg.logo { width: 70px; height: 70px; flex-shrink: 0; position: relative; }
+  .social-linkedin .text { position: relative; }
+  .social-linkedin .h {
+    color: var(--pearl);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+  .social-linkedin .h .a { color: var(--champagne); font-style: italic; }
+  .social-linkedin .p {
+    color: rgba(251,248,242,0.75);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+  }
+  /* Instagram square post */
+  .social-ig {
+    aspect-ratio: 1;
+    background:
+      radial-gradient(circle at 50% 30%, rgba(200,164,92,0.15), transparent 50%),
+      linear-gradient(180deg, var(--sapphire-2) 0%, var(--sapphire) 50%, var(--ink) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    gap: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .social-ig::after {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 1px solid rgba(200,164,92,0.3);
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  .social-ig svg.logo { width: 80px; height: 80px; position: relative; z-index: 1;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.4));
+  }
+  .social-ig .h {
+    color: var(--pearl);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.15;
+    position: relative; z-index: 1;
+  }
+  .social-ig .h .a { color: var(--champagne); font-style: italic; }
+  .social-ig .ar {
+    color: var(--champagne-pale);
+    font-family: 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    font-size: 11px;
+    position: relative; z-index: 1;
+  }
+  .social-ig .badge {
+    color: var(--champagne);
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative; z-index: 1;
+  }
+  /* Twitter/X header */
+  .social-twitter {
+    aspect-ratio: 3 / 1;
+    background: var(--pearl);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpolygon points='40,12 60,40 40,68 20,40' fill='none' stroke='%230B2A4A' stroke-width='0.4' opacity='0.12'/%3E%3Cpolygon points='40,22 52,40 40,58 28,40' fill='none' stroke='%23C8A45C' stroke-width='0.4' opacity='0.18'/%3E%3C/svg%3E");
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 24px;
+  }
+  .social-twitter svg.logo { width: 60px; height: 60px; flex-shrink: 0; }
+  .social-twitter .text {
+    border-left: 2px solid var(--champagne);
+    padding-left: 18px;
+  }
+  .social-twitter .name {
+    color: var(--sapphire);
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .social-twitter .role {
+    color: var(--antique);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .social-card-meta {
+    padding: 14px 20px;
+    border-top: 1px solid var(--line);
+  }
+  .social-card-meta .label { font-weight: 700; color: var(--sapphire); font-size: 13px; }
+  .social-card-meta .sub { font-size: 11px; color: var(--charcoal); opacity: 0.6; margin-top: 2px; }
+
+  /* ----- PATTERN PREVIEW ----- */
+  .pattern-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 800px) { .pattern-row { grid-template-columns: 1fr; } }
+  .pattern-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    background: #fff;
+  }
+  .pattern-stage {
+    aspect-ratio: 1.6 / 1;
+    background-color: var(--pearl);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpolygon points='30,8 45,30 30,52 15,30' fill='none' stroke='%230B2A4A' stroke-width='0.5' opacity='0.18'/%3E%3Cpolygon points='30,18 38,30 30,42 22,30' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.30'/%3E%3Ccircle cx='30' cy='30' r='1' fill='%238C6E2D' opacity='0.5'/%3E%3C/svg%3E");
+  }
+  .pattern-stage.dark {
+    background-color: var(--ink);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpolygon points='30,8 45,30 30,52 15,30' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.25'/%3E%3Cpolygon points='30,18 38,30 30,42 22,30' fill='none' stroke='%23F0DFB0' stroke-width='0.5' opacity='0.35'/%3E%3Ccircle cx='30' cy='30' r='1' fill='%23C8A45C' opacity='0.6'/%3E%3C/svg%3E");
+  }
+  .pattern-meta { padding: 16px 22px; border-top: 1px solid var(--line); background: #fff; }
+  .pattern-meta .label { font-weight: 700; color: var(--sapphire); font-size: 14px; }
+  .pattern-meta .sub { font-size: 12px; color: var(--charcoal); opacity: 0.6; margin-top: 3px; }
+
+  /* ---------- DOWNLOADS ---------- */
+  .downloads {
+    background: linear-gradient(135deg, var(--ink) 0%, #1a2438 100%);
+    color: var(--pearl);
+    padding: 80px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .downloads::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpolygon points='40,12 60,40 40,68 20,40' fill='none' stroke='%23C8A45C' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  .downloads > * { position: relative; }
+  .downloads h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--champagne);
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .downloads p {
+    opacity: 0.75;
+    font-size: 15px;
+    margin-bottom: 40px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .download-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .download-item {
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,164,92,0.22);
+    border-radius: 8px;
+    font-size: 12px;
+    transition: all 0.2s;
+  }
+  .download-item:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: rgba(200,164,92,0.5);
+  }
+  .download-item .file {
+    font-family: 'SF Mono', Menlo, monospace;
+    color: var(--champagne-pale);
+    font-weight: 600;
+  }
+  .download-item .desc {
+    color: rgba(251,248,242,0.6);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  footer.brand-footer {
+    background: var(--sapphire);
+    color: var(--pearl);
+    padding: 36px 32px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.92;
+  }
+  footer.brand-footer a { color: var(--champagne); text-decoration: none; }
+  footer.brand-footer .ar {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .caveat {
+    background: linear-gradient(135deg, #fff8e1 0%, #fef3d6 100%);
+    border-left: 4px solid var(--champagne);
+    padding: 18px 22px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #604c00;
+    margin-top: 36px;
+    line-height: 1.65;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============= REUSABLE LOGO SYMBOLS ============= -->
+<svg style="display:none">
+  <defs>
+    <symbol id="logo-primary" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#FBF8F2"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#0B2A4A" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#C8A45C" stroke-width="1.4" opacity="0.85"/>
+      <circle cx="120" cy="32" r="2" fill="#8C6E2D"/>
+      <circle cx="208" cy="120" r="2" fill="#8C6E2D"/>
+      <circle cx="120" cy="208" r="2" fill="#8C6E2D"/>
+      <circle cx="32" cy="120" r="2" fill="#8C6E2D"/>
+      <rect x="58" y="66" width="14" height="108" fill="#0B2A4A"/>
+      <rect x="58" y="66" width="58" height="14" fill="#0B2A4A"/>
+      <rect x="58" y="112" width="44" height="11" fill="#C8A45C"/>
+      <polygon points="128,174 144,174 162,66" fill="#C8A45C"/>
+      <polygon points="196,174 180,174 162,66" fill="#C8A45C"/>
+      <rect x="146" y="124" width="32" height="9" fill="#0B2A4A"/>
+      <circle cx="162" cy="66" r="3.5" fill="#8C6E2D"/>
+    </symbol>
+    <symbol id="logo-reversed" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#0F1419"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#F0DFB0" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#C8A45C" stroke-width="1.4" opacity="0.85"/>
+      <circle cx="120" cy="32" r="2" fill="#F0DFB0"/>
+      <circle cx="208" cy="120" r="2" fill="#F0DFB0"/>
+      <circle cx="120" cy="208" r="2" fill="#F0DFB0"/>
+      <circle cx="32" cy="120" r="2" fill="#F0DFB0"/>
+      <rect x="58" y="66" width="14" height="108" fill="#FBF8F2"/>
+      <rect x="58" y="66" width="58" height="14" fill="#FBF8F2"/>
+      <rect x="58" y="112" width="44" height="11" fill="#C8A45C"/>
+      <polygon points="128,174 144,174 162,66" fill="#C8A45C"/>
+      <polygon points="196,174 180,174 162,66" fill="#C8A45C"/>
+      <rect x="146" y="124" width="32" height="9" fill="#FBF8F2"/>
+      <circle cx="162" cy="66" r="3.5" fill="#F0DFB0"/>
+    </symbol>
+    <symbol id="logo-mono-sapphire" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#FBF8F2"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#0B2A4A" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#0B2A4A" stroke-width="1" opacity="0.5"/>
+      <rect x="58" y="66" width="14" height="108" fill="#0B2A4A"/>
+      <rect x="58" y="66" width="58" height="14" fill="#0B2A4A"/>
+      <rect x="58" y="112" width="44" height="11" fill="#0B2A4A"/>
+      <polygon points="128,174 144,174 162,66" fill="#0B2A4A"/>
+      <polygon points="196,174 180,174 162,66" fill="#0B2A4A"/>
+      <rect x="146" y="124" width="32" height="9" fill="#FBF8F2"/>
+      <circle cx="162" cy="66" r="3.5" fill="#0B2A4A"/>
+    </symbol>
+    <symbol id="logo-mono-gold" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#FBF8F2"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#C8A45C" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#C8A45C" stroke-width="1" opacity="0.5"/>
+      <rect x="58" y="66" width="14" height="108" fill="#C8A45C"/>
+      <rect x="58" y="66" width="58" height="14" fill="#C8A45C"/>
+      <rect x="58" y="112" width="44" height="11" fill="#C8A45C"/>
+      <polygon points="128,174 144,174 162,66" fill="#C8A45C"/>
+      <polygon points="196,174 180,174 162,66" fill="#C8A45C"/>
+      <rect x="146" y="124" width="32" height="9" fill="#FBF8F2"/>
+      <circle cx="162" cy="66" r="3.5" fill="#C8A45C"/>
+    </symbol>
+    <symbol id="logo-black" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#FBF8F2"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#0F1419" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#0F1419" stroke-width="1" opacity="0.5"/>
+      <rect x="58" y="66" width="14" height="108" fill="#0F1419"/>
+      <rect x="58" y="66" width="58" height="14" fill="#0F1419"/>
+      <rect x="58" y="112" width="44" height="11" fill="#0F1419"/>
+      <polygon points="128,174 144,174 162,66" fill="#0F1419"/>
+      <polygon points="196,174 180,174 162,66" fill="#0F1419"/>
+      <rect x="146" y="124" width="32" height="9" fill="#FBF8F2"/>
+      <circle cx="162" cy="66" r="3.5" fill="#0F1419"/>
+    </symbol>
+    <symbol id="logo-white" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="103" fill="#0F1419"/>
+      <circle cx="120" cy="120" r="100" fill="none" stroke="#FBF8F2" stroke-width="5"/>
+      <circle cx="120" cy="120" r="88" fill="none" stroke="#FBF8F2" stroke-width="1" opacity="0.5"/>
+      <rect x="58" y="66" width="14" height="108" fill="#FBF8F2"/>
+      <rect x="58" y="66" width="58" height="14" fill="#FBF8F2"/>
+      <rect x="58" y="112" width="44" height="11" fill="#FBF8F2"/>
+      <polygon points="128,174 144,174 162,66" fill="#FBF8F2"/>
+      <polygon points="196,174 180,174 162,66" fill="#FBF8F2"/>
+      <rect x="146" y="124" width="32" height="9" fill="#0F1419"/>
+      <circle cx="162" cy="66" r="3.5" fill="#FBF8F2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============= HEADER ============= -->
+<header class="brand-header">
+  <svg class="header-logo"><use href="#logo-reversed"/></svg>
+  <div class="eyebrow">Brand Identity Kit · Version 2.0</div>
+  <h1>Fahad Saad Fahad <span class="accent">Almansour</span></h1>
+  <div class="arabic-name">مكتب فهد سعد فهد المنصور للخدمات الإلكترونية</div>
+  <p>Office for Electronic Services — Saudi establishment specializing in electronic services & e-commerce. Refined visual identity with bilingual lockups, geometric pattern, and complete application system.</p>
+  <span class="v2-badge">▲ Refined Geometry</span>
+</header>
+
+<!-- ============= 01 — LOGO SYSTEM ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">01 — Logo System</div>
+    <h2 class="section-title">Six variants, one geometry</h2>
+    <p class="section-lead">Refined letterforms with optical centering and a slightly extended F stem to balance visually with A's apex. Compass dots on the inner ring add intentional craft. All variants share identical geometry — only colors swap.</p>
+
+    <div class="logo-grid">
+      <div class="logo-card">
+        <div class="logo-stage bg-pearl"><svg><use href="#logo-primary"/></svg></div>
+        <div class="logo-meta"><div class="label">Primary</div><div class="sub">Default. On pearl or any neutral light background.</div></div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage bg-ink"><svg><use href="#logo-reversed"/></svg></div>
+        <div class="logo-meta"><div class="label">Reversed</div><div class="sub">For ink (#0F1419) or sapphire backgrounds.</div></div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage bg-pattern"><svg><use href="#logo-primary"/></svg></div>
+        <div class="logo-meta"><div class="label">On pattern</div><div class="sub">Logo behaviour over the brand pattern texture.</div></div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage bg-pearl"><svg><use href="#logo-mono-sapphire"/></svg></div>
+        <div class="logo-meta"><div class="label">Mono — Sapphire</div><div class="sub">Single-color print, document headers, faxable.</div></div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage bg-pearl"><svg><use href="#logo-mono-gold"/></svg></div>
+        <div class="logo-meta"><div class="label">Mono — Champagne</div><div class="sub">Foil stamping, embossing, debossed signage.</div></div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage bg-sapphire"><svg><use href="#logo-white"/></svg></div>
+        <div class="logo-meta"><div class="label">White</div><div class="sub">Solid sapphire, photographs, video lower-thirds.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 02 — LOCKUPS ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">02 — Lockups (NEW)</div>
+    <h2 class="section-title">Bilingual signature</h2>
+    <p class="section-lead">When the badge appears alongside the company name. Two configurations — horizontal for headers, vertical for hero/centered contexts. Always include both the Arabic and Latin name; use only the badge alone in highly constrained surfaces.</p>
+
+    <div class="lockup-stack">
+      <!-- Horizontal lockup -->
+      <div class="lockup-card">
+        <div class="lockup-stage">
+          <div class="lockup-h">
+            <svg class="badge"><use href="#logo-primary"/></svg>
+            <div class="text-block">
+              <div class="ar-name">مكتب فهد سعد فهد المنصور</div>
+              <div class="latin-name">FAHAD SAAD FAHAD ALMANSOUR</div>
+              <div class="tagline">Office for Electronic Services</div>
+            </div>
+          </div>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">Horizontal lockup — Light</div>
+          <div class="sub">Email signatures, document headers, website navbars, business cards</div>
+        </div>
+      </div>
+
+      <!-- Horizontal reversed -->
+      <div class="lockup-card">
+        <div class="lockup-stage dark">
+          <div class="lockup-h reversed">
+            <svg class="badge"><use href="#logo-reversed"/></svg>
+            <div class="text-block">
+              <div class="ar-name">مكتب فهد سعد فهد المنصور</div>
+              <div class="latin-name">FAHAD SAAD FAHAD ALMANSOUR</div>
+              <div class="tagline">Office for Electronic Services</div>
+            </div>
+          </div>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">Horizontal lockup — Reversed</div>
+          <div class="sub">Dark mode website headers, presentation slides, video</div>
+        </div>
+      </div>
+
+      <!-- Vertical lockup -->
+      <div class="lockup-card">
+        <div class="lockup-stage">
+          <div class="lockup-v">
+            <svg class="badge"><use href="#logo-primary"/></svg>
+            <div class="divider"></div>
+            <div class="ar-name">مكتب فهد سعد فهد المنصور للخدمات الإلكترونية</div>
+            <div class="latin-name">FAHAD SAAD FAHAD ALMANSOUR</div>
+            <div class="tagline">Office for Electronic Services</div>
+          </div>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">Vertical lockup — Light</div>
+          <div class="sub">Hero sections, posters, centered title pages, social media profile artwork</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 03 — CONSTRUCTION ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">03 — Construction & Specs (NEW)</div>
+    <h2 class="section-title">How the mark is built</h2>
+    <p class="section-lead">The logo is constructed on a 240×240 unit grid. Outer ring r=100, inner accent ring r=88. Letter heights anchor to y=66 (top) and y=174 (bottom). Following these rules at every scale keeps the mark rigorously consistent.</p>
+
+    <div class="construction-row">
+      <div class="construction-card">
+        <div class="construction-stage">
+          <img src="logo-construction-1024.png" alt="Construction grid"/>
+        </div>
+        <div class="construction-meta">
+          <div class="label">Construction grid</div>
+          <div class="sub">Geometry on a 12-unit grid, anchored to the central crosshair.</div>
+          <div class="specs">
+            ViewBox 240 × 240<br>
+            Outer ring r=100, stroke-width=5<br>
+            Inner ring r=88, stroke-width=1.4<br>
+            F stem 14×108 @ (58, 66)<br>
+            A apex (162, 66) · base 130–194
+          </div>
+        </div>
+      </div>
+      <div class="construction-card">
+        <div class="construction-stage">
+          <img src="logo-clear-space-1024.png" alt="Clear space"/>
+        </div>
+        <div class="construction-meta">
+          <div class="label">Clear space</div>
+          <div class="sub">Always leave space equal to <strong>x</strong> — the height of the F top bar — around the logo on all sides. No type, image, or graphic enters this zone.</div>
+          <div class="specs">
+            x = 14 units (in 240-unit grid)<br>
+            x = ~5.8% of total mark width
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:48px; color:var(--sapphire); font-family:'Playfair Display',serif; font-size:22px; font-weight:600; margin-bottom:20px;">Minimum size guidance</h3>
+    <div class="min-size-row">
+      <div class="min-size-item">
+        <svg width="120" height="120"><use href="#logo-primary"/></svg>
+        <div class="px">120px</div>
+        <div class="desc">Recommended display size</div>
+      </div>
+      <div class="min-size-item">
+        <svg width="64" height="64"><use href="#logo-primary"/></svg>
+        <div class="px">64px</div>
+        <div class="desc">Standard nav/header</div>
+      </div>
+      <div class="min-size-item">
+        <svg width="40" height="40"><use href="#logo-primary"/></svg>
+        <div class="px">40px</div>
+        <div class="desc">Compact contexts</div>
+      </div>
+      <div class="min-size-item">
+        <svg width="24" height="24"><use href="#logo-primary"/></svg>
+        <div class="px">24px</div>
+        <div class="desc">Minimum — favicon</div>
+      </div>
+      <div class="min-size-item warn">
+        <svg width="16" height="16"><use href="#logo-primary"/></svg>
+        <div class="px">16px</div>
+        <div class="desc">⚠ Below minimum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 04 — COLOR PALETTE ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">04 — Color Palette</div>
+    <h2 class="section-title">Sapphire & Champagne Gold</h2>
+    <p class="section-lead">Eight values across three tiers. The sapphire is deeper than corporate navy; the champagne reads as luxurious rather than yellow. All values verified — copy hex codes directly into your design tools.</p>
+
+    <div class="palette-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#0B2A4A;"></div>
+        <div class="swatch-meta">
+          <div class="role">Primary</div>
+          <div class="name">Sapphire</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#0B2A4A</span>
+            <span>RGB&nbsp;&nbsp;11, 42, 74</span>
+            <span>CMYK 85, 43, 0, 71</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#C8A45C;"></div>
+        <div class="swatch-meta">
+          <div class="role">Primary Accent</div>
+          <div class="name">Champagne Gold</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#C8A45C</span>
+            <span>RGB&nbsp;&nbsp;200, 164, 92</span>
+            <span>CMYK 0, 18, 54, 22</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#8C6E2D;"></div>
+        <div class="swatch-meta">
+          <div class="role">Secondary</div>
+          <div class="name">Antique Gold</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#8C6E2D</span>
+            <span>RGB&nbsp;&nbsp;140, 110, 45</span>
+            <span>CMYK 0, 21, 68, 45</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F0DFB0;"></div>
+        <div class="swatch-meta">
+          <div class="role">Highlight</div>
+          <div class="name">Pale Champagne</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#F0DFB0</span>
+            <span>RGB&nbsp;&nbsp;240, 223, 176</span>
+            <span>CMYK 0, 7, 27, 6</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FBF8F2;"></div>
+        <div class="swatch-meta">
+          <div class="role">Background</div>
+          <div class="name">Pearl</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#FBF8F2</span>
+            <span>RGB&nbsp;&nbsp;251, 248, 242</span>
+            <span>CMYK 0, 1, 4, 2</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#0F1419;"></div>
+        <div class="swatch-meta">
+          <div class="role">Dark BG</div>
+          <div class="name">Ink</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#0F1419</span>
+            <span>RGB&nbsp;&nbsp;15, 20, 25</span>
+            <span>CMYK 40, 20, 0, 90</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1A1F2E;"></div>
+        <div class="swatch-meta">
+          <div class="role">Text</div>
+          <div class="name">Charcoal</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#1A1F2E</span>
+            <span>RGB&nbsp;&nbsp;26, 31, 46</span>
+            <span>CMYK 43, 33, 0, 82</span>
+          </div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#C9C2B3;"></div>
+        <div class="swatch-meta">
+          <div class="role">Neutral</div>
+          <div class="name">Stone</div>
+          <div class="vals">
+            <span>HEX&nbsp;&nbsp;#C9C2B3</span>
+            <span>RGB&nbsp;&nbsp;201, 194, 179</span>
+            <span>CMYK 0, 3, 11, 21</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="caveat">
+      <strong>Honest caveat:</strong> CMYK values above are sRGB→CMYK conversions. For print production, your printer needs the actual ICC profile of their press to remap accurately. Treat these as starting points, not final press specs.
+    </div>
+  </div>
+</section>
+
+<!-- ============= 05 — PATTERN ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">05 — Brand Pattern (NEW)</div>
+    <h2 class="section-title">Diamond grid texture</h2>
+    <p class="section-lead">A subtle geometric pattern derived from the badge's diamond/rhombus geometry. Use sparingly — for letterhead backgrounds, presentation dividers, packaging, or as a quiet texture on hero sections.</p>
+
+    <div class="pattern-row">
+      <div class="pattern-card">
+        <div class="pattern-stage"></div>
+        <div class="pattern-meta">
+          <div class="label">Pattern — Light</div>
+          <div class="sub">Pearl ground · sapphire/gold line work · 60×60 tile</div>
+        </div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-stage dark"></div>
+        <div class="pattern-meta">
+          <div class="label">Pattern — Dark</div>
+          <div class="sub">Ink ground · pale champagne accents · 60×60 tile</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 06 — TYPOGRAPHY ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">06 — Typography</div>
+    <h2 class="section-title">Three-stack system</h2>
+    <p class="section-lead">Playfair Display for hero/display moments. Inter for UI, headings, and body. Noto Naskh Arabic for all Arabic — already used in your existing assets. All free under Open Font License.</p>
+
+    <div class="type-grid">
+      <div class="type-card">
+        <div class="role">Display — Hero</div>
+        <div class="specimen display" style="font-size:56px; font-weight:700; line-height:1;">Almansour</div>
+        <div class="info">Playfair Display · Bold · 56–96px</div>
+      </div>
+      <div class="type-card">
+        <div class="role">Heading</div>
+        <div class="specimen" style="font-size:32px; font-weight:700; letter-spacing:-0.01em; line-height:1.15;">Office for Electronic Services</div>
+        <div class="info">Inter · Bold · 24–40px</div>
+      </div>
+      <div class="type-card">
+        <div class="role">Body</div>
+        <div class="specimen" style="font-size:18px; font-weight:400; line-height:1.5;">A Saudi establishment specializing in electronic services and e-commerce, delivering reliable digital workflows for Vision 2030.</div>
+        <div class="info">Inter · Regular · 16–18px</div>
+      </div>
+      <div class="type-card">
+        <div class="role">Arabic — Primary</div>
+        <div class="specimen ar" style="font-size:34px; font-weight:600; line-height:1.4;">مكتب فهد سعد فهد المنصور للخدمات الإلكترونية</div>
+        <div class="info">Noto Naskh Arabic · SemiBold</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 07 — STATIONERY MOCKUPS ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">07 — Stationery</div>
+    <h2 class="section-title">Live mockups</h2>
+    <p class="section-lead">Concept mockups rendered in HTML/CSS with paper texture and depth shadows. These are presentation visualizations — print-ready production files (CMYK PDF with bleed) require a separate output.</p>
+
+    <div class="mockups">
+      <!-- Business card front -->
+      <div class="mockup">
+        <div class="mockup-stage">
+          <div class="biz-card">
+            <div class="top">
+              <svg><use href="#logo-primary"/></svg>
+              <div>
+                <div class="ar">مكتب المنصور</div>
+                <div class="name">FAHAD ALMANSOUR</div>
+              </div>
+            </div>
+            <div>
+              <div class="person">Fahad Saad Almansour</div>
+              <div class="title">Founder · CR #7053130576</div>
+            </div>
+            <div class="contact">
+              info@fahadalmansouroffice.com<br>
+              +966 57 013 1122 · fahadalmansouroffice.com
+            </div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">Business card — Front</div>
+          <div class="sub">85 × 55mm · pearl stock · gold corner accent</div>
+        </div>
+      </div>
+
+      <!-- Business card back -->
+      <div class="mockup">
+        <div class="mockup-stage dark">
+          <div class="biz-card back">
+            <svg><use href="#logo-reversed"/></svg>
+            <div class="stamp">EST · 2024</div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">Business card — Back</div>
+          <div class="sub">Sapphire field · reversed mark · subtle "EST" stamp</div>
+        </div>
+      </div>
+
+      <!-- Letterhead -->
+      <div class="mockup">
+        <div class="mockup-stage">
+          <div class="letterhead">
+            <div class="letterhead-top">
+              <svg><use href="#logo-primary"/></svg>
+              <div class="name-block">
+                <div class="ar">مكتب المنصور</div>
+                <div class="name">FAHAD ALMANSOUR</div>
+                <div class="sub">Office For Electronic Services</div>
+              </div>
+            </div>
+            <div class="letterhead-body">
+              <div class="meta-row">Riyadh · 1 Dhul Hijjah 1447</div>
+              <div class="meta-row">Subject:</div>
+              <div class="line"></div>
+              <div class="line medium"></div>
+              <div class="line"></div>
+              <div class="line short"></div>
+              <div class="line"></div>
+              <div class="line medium"></div>
+              <div class="line short"></div>
+            </div>
+            <div class="letterhead-foot">fahadalmansouroffice.com · +966 57 013 1122</div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">Letterhead — A4</div>
+          <div class="sub">210 × 297mm · gold hairline divider · bilingual masthead</div>
+        </div>
+      </div>
+
+      <!-- Envelope -->
+      <div class="mockup">
+        <div class="mockup-stage">
+          <div class="envelope">
+            <div class="envelope-stamp"><svg><use href="#logo-mono-sapphire"/></svg></div>
+            <div class="envelope-top">
+              <svg><use href="#logo-primary"/></svg>
+              <div>
+                <div class="name">FAHAD ALMANSOUR</div>
+                <div class="sub">Office For Electronic Services</div>
+              </div>
+            </div>
+            <div class="envelope-bottom">
+              fahadalmansouroffice.com · Riyadh, KSA
+            </div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">DL Envelope (NEW)</div>
+          <div class="sub">220 × 110mm · top-left masthead · CR-stamp window placeholder</div>
+        </div>
+      </div>
+
+      <!-- Web header -->
+      <div class="mockup">
+        <div class="mockup-stage">
+          <div class="web-mock">
+            <div class="web-mock-bar"><span></span><span></span><span></span></div>
+            <div class="web-mock-nav">
+              <div class="left">
+                <svg><use href="#logo-primary"/></svg>
+                <div class="text">FAHAD ALMANSOUR</div>
+              </div>
+              <div class="links">
+                <span>About</span><span>Services</span><span>Contact</span>
+                <span class="cta">Get Started</span>
+              </div>
+            </div>
+            <div class="web-mock-hero">
+              <div class="h">Saudi <span class="a">e-commerce</span><br>solutions, end to end.</div>
+              <div class="p">Reliable electronic services for businesses operating across the Kingdom — from setup to scale.</div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">Website header</div>
+          <div class="sub">Logo + wordmark + nav + hero treatment with pattern texture</div>
+        </div>
+      </div>
+
+      <!-- Avatars -->
+      <div class="mockup">
+        <div class="mockup-stage">
+          <div style="display:flex; flex-direction:column; gap:22px; align-items:center;">
+            <div class="avatar-row">
+              <div class="avatar s120"><svg><use href="#logo-primary"/></svg></div>
+              <div class="avatar s80"><svg><use href="#logo-primary"/></svg></div>
+              <div class="avatar s48"><svg><use href="#logo-primary"/></svg></div>
+              <div class="avatar s32"><svg><use href="#logo-primary"/></svg></div>
+              <div class="avatar s24"><svg><use href="#logo-primary"/></svg></div>
+              <div class="avatar s16"><svg><use href="#logo-primary"/></svg></div>
+            </div>
+            <div class="avatar-row">
+              <div class="avatar s120"><svg><use href="#logo-reversed"/></svg></div>
+              <div class="avatar s80"><svg><use href="#logo-reversed"/></svg></div>
+              <div class="avatar s48"><svg><use href="#logo-reversed"/></svg></div>
+              <div class="avatar s32"><svg><use href="#logo-reversed"/></svg></div>
+              <div class="avatar s24"><svg><use href="#logo-reversed"/></svg></div>
+              <div class="avatar s16"><svg><use href="#logo-reversed"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-meta">
+          <div class="label">Avatars & Favicons</div>
+          <div class="sub">120 · 80 · 48 · 32 · 24 · 16 px — both palettes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 08 — SOCIAL MEDIA (NEW) ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">08 — Social Media (NEW)</div>
+    <h2 class="section-title">Profile & cover templates</h2>
+    <p class="section-lead">Cover artwork ready for LinkedIn, Twitter/X, and a square Instagram post template. Use the avatar SVGs (above) for circular profile pictures across all platforms.</p>
+
+    <div class="social-grid">
+      <!-- LinkedIn cover -->
+      <div class="social-card" style="grid-column: 1 / -1;">
+        <div class="social-linkedin">
+          <svg class="logo"><use href="#logo-reversed"/></svg>
+          <div class="text">
+            <div class="h">Saudi <span class="a">e-commerce</span> solutions</div>
+            <div class="p">FAHAD ALMANSOUR · OFFICE FOR ELECTRONIC SERVICES · CR #7053130576</div>
+          </div>
+        </div>
+        <div class="social-card-meta">
+          <div class="label">LinkedIn cover</div>
+          <div class="sub">1584 × 396px · sapphire gradient with diamond pattern overlay</div>
+        </div>
+      </div>
+
+      <!-- Twitter/X header -->
+      <div class="social-card" style="grid-column: 1 / -1;">
+        <div class="social-twitter">
+          <svg class="logo"><use href="#logo-primary"/></svg>
+          <div class="text">
+            <div class="name">FAHAD ALMANSOUR</div>
+            <div class="role">Office For Electronic Services · Riyadh</div>
+          </div>
+        </div>
+        <div class="social-card-meta">
+          <div class="label">X / Twitter header</div>
+          <div class="sub">1500 × 500px · pearl ground · diamond pattern · left-aligned identity</div>
+        </div>
+      </div>
+
+      <!-- Instagram square -->
+      <div class="social-card">
+        <div class="social-ig">
+          <svg class="logo"><use href="#logo-reversed"/></svg>
+          <div class="h">Saudi <span class="a">e-commerce</span><br>excellence</div>
+          <div class="ar">مكتب فهد المنصور</div>
+          <div class="badge">CR #7053130576</div>
+        </div>
+        <div class="social-card-meta">
+          <div class="label">Instagram post</div>
+          <div class="sub">1080 × 1080px · sapphire ground · centered identity stack</div>
+        </div>
+      </div>
+
+      <!-- Instagram alt -->
+      <div class="social-card">
+        <div class="social-ig" style="background: linear-gradient(180deg, var(--pearl) 0%, var(--pearl-warm) 100%);">
+          <svg class="logo"><use href="#logo-primary"/></svg>
+          <div class="h" style="color:var(--sapphire);">Built for <span class="a">scale</span></div>
+          <div class="ar" style="color:var(--antique);">حلول إلكترونية</div>
+          <div class="badge" style="color:var(--antique);">EST · 2024</div>
+        </div>
+        <div class="social-card-meta">
+          <div class="label">Instagram post — Light</div>
+          <div class="sub">1080 × 1080px · pearl ground · for organic post variety</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= 09 — USAGE RULES ============= -->
+<section>
+  <div class="container">
+    <div class="section-num">09 — Usage Rules</div>
+    <h2 class="section-title">Do & Don't</h2>
+    <p class="section-lead">Six rules that protect the mark. Following them keeps the brand consistent across every surface.</p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap:16px;">
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#1a7c3e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✓ DO</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Maintain clear space</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">Leave space equal to <em>x</em> (height of F top bar) around the logo on all sides.</div>
+      </div>
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#1a7c3e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✓ DO</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Use 24px minimum</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">Below 24px the inner ring and crossbar lose legibility.</div>
+      </div>
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#1a7c3e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✓ DO</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Pick the right variant</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">Reversed for dark, mono for single-color print, primary for everything else.</div>
+      </div>
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#a91e1e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✗ DON'T</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Don't recolor freely</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">Use only the eight palette colors. No gradients applied to the mark itself.</div>
+      </div>
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#a91e1e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✗ DON'T</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Don't squish or stretch</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">The mark is a perfect circle. Always scale uniformly.</div>
+      </div>
+      <div style="padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:var(--shadow-soft);">
+        <div style="color:#a91e1e; font-size:11px; font-weight:700; letter-spacing:0.18em; margin-bottom:10px;">✗ DON'T</div>
+        <div style="color:var(--sapphire); font-weight:700; margin-bottom:6px;">Don't add effects</div>
+        <div style="font-size:13px; color:var(--charcoal); opacity:0.7;">No drop shadows, bevels, or outer glows. The mark is flat by design.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= DOWNLOADS ============= -->
+<div class="downloads">
+  <h2>Asset files</h2>
+  <p>All files are in the same directory as this page. SVG for vector use, PNG for raster, ICO for browser tabs. The construction grid and clear-space diagrams are design references — not for placement on collateral.</p>
+  <div class="download-list">
+    <div class="download-item"><div class="file">logo-primary.svg</div><div class="desc">Refined primary mark · vector source</div></div>
+    <div class="download-item"><div class="file">logo-primary-{256,512,1024}.png</div><div class="desc">Raster · 1× 2× 4×</div></div>
+    <div class="download-item"><div class="file">logo-primary-transparent.svg</div><div class="desc">No background · for overlays</div></div>
+    <div class="download-item"><div class="file">logo-reversed.svg / .png</div><div class="desc">For dark backgrounds</div></div>
+    <div class="download-item"><div class="file">logo-mono-sapphire.svg / .png</div><div class="desc">Single-color sapphire</div></div>
+    <div class="download-item"><div class="file">logo-mono-gold.svg / .png</div><div class="desc">Single-color champagne</div></div>
+    <div class="download-item"><div class="file">logo-black.svg / .png</div><div class="desc">Pure black · print fallback</div></div>
+    <div class="download-item"><div class="file">logo-white.svg / .png</div><div class="desc">Pure white · for solid dark</div></div>
+    <div class="download-item"><div class="file">logo-construction.svg / .png</div><div class="desc">Construction grid · design reference</div></div>
+    <div class="download-item"><div class="file">logo-clear-space.svg / .png</div><div class="desc">Clear-space diagram · design reference</div></div>
+    <div class="download-item"><div class="file">brand-pattern.svg / .png</div><div class="desc">Diamond grid · light variant</div></div>
+    <div class="download-item"><div class="file">brand-pattern-dark.svg / .png</div><div class="desc">Diamond grid · dark variant</div></div>
+    <div class="download-item"><div class="file">favicon.ico</div><div class="desc">Multi-res 16/32/48/64/128/256</div></div>
+    <div class="download-item"><div class="file">favicon-{16…512}.png</div><div class="desc">PWA / Apple touch icon set</div></div>
+  </div>
+</div>
+
+<footer class="brand-footer">
+  <div class="ar">مكتب فهد سعد فهد المنصور للخدمات الإلكترونية</div>
+  Brand Kit v2 · Fahad Saad Fahad Almansour — Office for Electronic Services · CR #7053130576<br>
+  <a href="https://fahadalmansouroffice.com">fahadalmansouroffice.com</a>
+</footer>
+
+</body>
+</html>

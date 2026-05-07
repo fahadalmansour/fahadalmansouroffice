@@ -1,0 +1,20 @@
+/*
+Theme Name:        Fahad Almansour Office
+Theme URI:         https://fahadalmansouroffice.com/
+Author:            Fahad Saad Fahad Almansour Office
+Author URI:        https://fahadalmansouroffice.com/
+Description:       Bilingual EN/AR classic PHP theme for Fahad Almansour Office for Electronic Services & E-Commerce. Sapphire / champagne / pearl palette from the office brand kit. WooCommerce-ready.
+Version:           1.0.0
+Requires at least: 6.4
+Tested up to:      6.9
+Requires PHP:      7.4
+License:           GPL-2.0-or-later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:       fahadalmansouroffice
+Tags:              custom-colors, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, woocommerce, rtl-language-support
+*/
+
+/*
+This file ships the WordPress theme header. The actual styles are in
+assets/css/theme.css and are enqueued by inc/enqueue.php.
+*/
