@@ -24,6 +24,9 @@ add_action(
 /**
  * Default primary-nav fallback that mirrors the static landing page when the
  * site editor hasn't built a menu yet.
+ *
+ * @since 1.0.0
+ * @return void
  */
 function fa_office_primary_nav_fallback() {
 	?>

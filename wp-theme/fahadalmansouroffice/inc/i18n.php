@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Inline Arabic span. Use for prose.
  *
+ * @since 1.0.0
  * @param string $ar Arabic text.
  * @return string
  */
@@ -23,6 +24,7 @@ function fa_office_ar( $ar ) {
 /**
  * Heading-variant Arabic block. Use as a sibling to <h1>/<h2>/<h3>.
  *
+ * @since 1.0.0
  * @param string $ar Arabic text.
  * @return string
  */
@@ -33,6 +35,7 @@ function fa_office_ar_h( $ar ) {
 /**
  * Paragraph-variant Arabic block. Use as a sibling to <p>.
  *
+ * @since 1.0.0
  * @param string $ar Arabic text.
  * @return string
  */

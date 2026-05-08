@@ -75,7 +75,13 @@ add_action(
 );
 
 /**
- * Quick accessor — returns the Customizer value or its default.
+ * Quick accessor — returns the Customizer value or its baked-in default.
+ *
+ * Returns raw stored values; escaping is the caller's responsibility.
+ *
+ * @since 1.0.0
+ * @param string $key Setting key (e.g. 'fa_office_email').
+ * @return string
  */
 function fa_office_setting( $key ) {
 	$defaults = array(

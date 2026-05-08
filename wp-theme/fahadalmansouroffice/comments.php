@@ -41,8 +41,8 @@ if ( post_password_required() ) {
 		<?php
 		the_comments_pagination(
 			array(
-				'prev_text' => __( 'Older comments', 'fahadalmansouroffice' ),
-				'next_text' => __( 'Newer comments', 'fahadalmansouroffice' ),
+				'prev_text' => esc_html__( 'Older comments', 'fahadalmansouroffice' ),
+				'next_text' => esc_html__( 'Newer comments', 'fahadalmansouroffice' ),
 			)
 		);
 		?>
@@ -52,5 +52,11 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'fahadalmansouroffice' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php
+	comment_form(
+		array(
+			'class_form' => 'comment-form fa-office-form',
+		)
+	);
+	?>
 </section>

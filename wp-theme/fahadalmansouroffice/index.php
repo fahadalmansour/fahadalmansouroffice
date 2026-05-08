@@ -40,8 +40,8 @@ get_header();
 			<?php
 			the_posts_pagination(
 				array(
-					'prev_text' => __( 'Previous', 'fahadalmansouroffice' ),
-					'next_text' => __( 'Next',     'fahadalmansouroffice' ),
+					'prev_text' => esc_html__( 'Previous', 'fahadalmansouroffice' ),
+					'next_text' => esc_html__( 'Next',     'fahadalmansouroffice' ),
 				)
 			);
 			?>

@@ -44,9 +44,19 @@ while ( have_posts() ) :
 				</footer>
 			</article>
 
-			<nav class="post-nav">
-				<?php previous_post_link( '%link', '&laquo; %title' ); ?>
-				<?php next_post_link( '%link', '%title &raquo;' ); ?>
+			<nav class="post-nav" aria-label="<?php esc_attr_e( 'Post navigation', 'fahadalmansouroffice' ); ?>">
+				<?php
+				previous_post_link(
+					'%link',
+					/* translators: %title is the previous post title. */
+					'<span aria-hidden="true">&laquo;</span> ' . esc_html__( '%title', 'fahadalmansouroffice' )
+				);
+				next_post_link(
+					'%link',
+					/* translators: %title is the next post title. */
+					esc_html__( '%title', 'fahadalmansouroffice' ) . ' <span aria-hidden="true">&raquo;</span>'
+				);
+				?>
 			</nav>
 
 			<?php

@@ -11,9 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'FA_OFFICE_VERSION', '1.0.0' );
-define( 'FA_OFFICE_DIR', get_template_directory() );
-define( 'FA_OFFICE_URI', get_template_directory_uri() );
+if ( ! defined( 'FA_OFFICE_VERSION' ) ) {
+	define( 'FA_OFFICE_VERSION', '1.0.0' );
+}
+if ( ! defined( 'FA_OFFICE_DIR' ) ) {
+	define( 'FA_OFFICE_DIR', get_template_directory() );
+}
+if ( ! defined( 'FA_OFFICE_URI' ) ) {
+	define( 'FA_OFFICE_URI', get_template_directory_uri() );
+}
 
 require_once FA_OFFICE_DIR . '/inc/theme-supports.php';
 require_once FA_OFFICE_DIR . '/inc/enqueue.php';
