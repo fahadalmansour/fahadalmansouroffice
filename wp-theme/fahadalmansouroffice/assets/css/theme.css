@@ -453,3 +453,10 @@ footer .copy { font-size: .77rem; color: var(--text2); line-height: 1.8; opacity
 .woocommerce ul.products li.product .price { color: var(--gold-deep); font-weight: 700; }
 .woocommerce-message,
 .woocommerce-info { border-top-color: var(--gold) !important; }
+
+/* Arabic country/region span — used in contact rows under English address line. */
+.ar-country {
+	display: block;
+	direction: rtl;
+	font-family: "Noto Naskh Arabic", serif;
+}

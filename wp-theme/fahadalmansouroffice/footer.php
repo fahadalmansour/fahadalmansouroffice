@@ -20,7 +20,7 @@ $current_year  = date_i18n( 'Y' );
 
 <footer role="contentinfo">
 	<img class="footer-logo" src="<?php echo esc_url( FA_OFFICE_URI . '/assets/img/logo-mono-sapphire-512.png' ); ?>" alt="" />
-	<h3>مكتب فهد سعد فهد المنصور للخدمات الإلكترونية</h3>
+	<?php echo fa_office_ar_title( 'مكتب فهد سعد فهد المنصور للخدمات الإلكترونية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 	<div class="fen"><?php esc_html_e( 'Fahad Saad Fahad Almansour — Office For Electronic Services', 'fahadalmansouroffice' ); ?></div>
 
 	<div class="flinks">
@@ -51,6 +51,7 @@ $current_year  = date_i18n( 'Y' );
 		);
 		?>
 		<br />
+		<span lang="ar" dir="rtl">
 		<?php
 		printf(
 			/* translators: %s: current year. */
@@ -58,6 +59,7 @@ $current_year  = date_i18n( 'Y' );
 			esc_html( $current_year )
 		);
 		?>
+		</span>
 	</div>
 </footer>
 

@@ -28,10 +28,10 @@ $contact_status = isset( $_GET['contact'] ) ? sanitize_key( wp_unslash( $_GET['c
 <section id="home" class="hero">
 	<img class="hero-logo" src="<?php echo esc_url( FA_OFFICE_URI . '/assets/img/logo-primary.svg' ); ?>" alt="<?php esc_attr_e( 'Fahad Almansour Office logo', 'fahadalmansouroffice' ); ?>" />
 	<h1>Fahad Saad Fahad Almansour</h1>
-	<span class="ar-name">مكتب فهد سعد فهد المنصور</span>
+	<?php echo fa_office_ar_name( 'مكتب فهد سعد فهد المنصور' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 	<p class="tagline">
 		<?php esc_html_e( 'Office For Electronic Services & E-Commerce', 'fahadalmansouroffice' ); ?>
-		<span class="ar">للخدمات الإلكترونية والتجارة الإلكترونية</span>
+		<?php echo fa_office_ar( 'للخدمات الإلكترونية والتجارة الإلكترونية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 	</p>
 	<div class="cta-row">
 		<a class="btn btn-primary" href="#services">
@@ -50,26 +50,26 @@ $contact_status = isset( $_GET['contact'] ) ? sanitize_key( wp_unslash( $_GET['c
 	<div class="container">
 		<div class="section-head">
 			<h2><?php esc_html_e( 'What We Offer', 'fahadalmansouroffice' ); ?></h2>
-			<span class="ar">ماذا نقدم</span>
+			<?php echo fa_office_ar( 'ماذا نقدم' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 			<div class="gold-bar"></div>
 		</div>
 		<div class="cards">
 			<article class="card">
 				<div class="card-icon"><?php fa_office_the_icon( 'monitor' ); ?></div>
 				<h3><?php esc_html_e( 'Electronic Services', 'fahadalmansouroffice' ); ?></h3>
-				<div class="ar-h">الخدمات الإلكترونية</div>
+				<?php echo fa_office_ar_h( 'الخدمات الإلكترونية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 				<p><?php esc_html_e( 'Digital solutions including system setup, e-government services, and IT consultancy for individuals and businesses.', 'fahadalmansouroffice' ); ?></p>
 			</article>
 			<article class="card">
 				<div class="card-icon"><?php fa_office_the_icon( 'cart' ); ?></div>
 				<h3><?php esc_html_e( 'E-Commerce Solutions', 'fahadalmansouroffice' ); ?></h3>
-				<div class="ar-h">حلول التجارة الإلكترونية</div>
+				<?php echo fa_office_ar_h( 'حلول التجارة الإلكترونية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 				<p><?php esc_html_e( 'Online store setup, product management, payment integration, and full e-commerce lifecycle support.', 'fahadalmansouroffice' ); ?></p>
 			</article>
 			<article class="card">
 				<div class="card-icon"><?php fa_office_the_icon( 'info' ); ?></div>
 				<h3><?php esc_html_e( 'Digital Consulting', 'fahadalmansouroffice' ); ?></h3>
-				<div class="ar-h">الاستشارات الرقمية</div>
+				<?php echo fa_office_ar_h( 'الاستشارات الرقمية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 				<p><?php esc_html_e( 'Strategic guidance for digital transformation, online presence, and business automation for the Saudi market.', 'fahadalmansouroffice' ); ?></p>
 			</article>
 		</div>
@@ -86,9 +86,9 @@ $contact_status = isset( $_GET['contact'] ) ? sanitize_key( wp_unslash( $_GET['c
 			</div>
 			<div class="about-text">
 				<h2><?php esc_html_e( 'About the Office', 'fahadalmansouroffice' ); ?></h2>
-				<div class="ar-h">عن المكتب</div>
+				<?php echo fa_office_ar_h( 'عن المكتب' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 				<p><?php esc_html_e( 'Fahad Saad Fahad Almansour Office for Electronic Services is a Saudi establishment specialising in digital and electronic services, e-commerce, and technology consultancy.', 'fahadalmansouroffice' ); ?></p>
-				<p class="ar-p">مكتب فهد سعد فهد المنصور للخدمات الإلكترونية مؤسسة سعودية متخصصة في الخدمات الرقمية والإلكترونية والتجارة الإلكترونية والاستشارات التقنية.</p>
+				<?php echo fa_office_ar_p( 'مكتب فهد سعد فهد المنصور للخدمات الإلكترونية مؤسسة سعودية متخصصة في الخدمات الرقمية والإلكترونية والتجارة الإلكترونية والاستشارات التقنية.' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 				<div class="tags">
 					<span class="tag">
 						<?php fa_office_the_icon( 'doc' ); ?>
@@ -123,7 +123,7 @@ $contact_status = isset( $_GET['contact'] ) ? sanitize_key( wp_unslash( $_GET['c
 	<div class="container">
 		<div class="section-head">
 			<h2><?php esc_html_e( 'Get In Touch', 'fahadalmansouroffice' ); ?></h2>
-			<span class="ar">تواصل معنا</span>
+			<?php echo fa_office_ar( 'تواصل معنا' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 			<div class="gold-bar"></div>
 		</div>
 		<div class="contact-grid">
@@ -161,7 +161,7 @@ $contact_status = isset( $_GET['contact'] ) ? sanitize_key( wp_unslash( $_GET['c
 						<div class="ci-val">
 							<?php echo esc_html( $fa_address ); ?>
 							<br />
-							<span style="direction:rtl;display:block;font-family:'Noto Naskh Arabic',serif;">المملكة العربية السعودية</span>
+							<?php echo fa_office_ar_country( 'المملكة العربية السعودية' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- helper escapes. ?>
 						</div>
 					</div>
 				</div>
