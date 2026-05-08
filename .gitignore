@@ -18,6 +18,9 @@ index\ 2.html
 # Local-only Claude config
 .claude/settings.local.json
 
+# WordPress Studio site lives here (full WP install + DB — not for git)
+studio-build/
+
 # Archives / one-offs
 files.zip
 *.bak
